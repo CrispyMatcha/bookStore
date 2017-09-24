@@ -1,0 +1,30 @@
+<c3p0-config>
+	<default-config>
+		<property name="user">root</property>
+		<property name="password">123456</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+
+		<!--  若数据库中连接数不足时，一次向数据库服务器申请多少个连接-->
+		<property name="acquireIncrement">2</property>
+		<!--  初始化数据库连接池连接的数量-->
+		<property name="initialPoolSize">5</property>
+
+		<property name="minPoolSize">5</property>
+
+		<property name="maxPoolSize">10</property>
+
+
+		<property name="maxStatements">20</property>
+		<property name="maxStatementsPerConnection">5</property>
+	</default-config>
+
+	<named-config name="javawebapp">
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/bookstore
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+	</named-config>
+</c3p0-config>
