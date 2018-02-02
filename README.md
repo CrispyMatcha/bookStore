@@ -1,4 +1,4 @@
-# bookStore 
+# 购物车小项目
 # 总体架构
   # MVC 设计模式:<br>
   &nbsp;&nbsp;&nbsp;&nbsp; --Model:POJO <br>
